@@ -1,5 +1,5 @@
 # Devion Buchynsky 
-# Part B - Truncate teh string to 5 characters if its length is a multiple of 5. 
+# Part B - Truncate the string to 5 characters if its length is a multiple of 5. 
 # multiples of 5: 5,10,15,20...... 
 
 multiple_of_5_string = '0123456789' # 10 characters
