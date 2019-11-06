@@ -8,6 +8,7 @@ hyphen_character = ['-']
 
 #hyphen_string.append(hyphen_string2)
 print('Before removing the hyphen and appending the next string: ' + str(hyphen_string))
+print('This is the second string before appending it: ' + str(hyphen_string2))
 
 for i in hyphen_character:
     hyphen_string = hyphen_string.replace(i, '') #removing the hyphen
