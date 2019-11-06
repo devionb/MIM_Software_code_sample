@@ -35,7 +35,10 @@ print(multiple_of_6_string_number)
 def truncate_string(string_2):
     if len(string_2) % 5 == 0: # if the string is a % of 5 then it will truncate the string to 5 characters, if not it will not do anything.
         return ''.join(string_2[0:5]) # [0:5] will only take 0-5 characters and not include the rest. 
+        #output_counter += len(string_2)
+        #output_counter += 5
     return string_2
+    #return output_counter
 
 print('After function is ran.')
 print(truncate_string(multiple_of_5_string_number))
@@ -92,9 +95,66 @@ hyphen_character = ['-']
 print('Part D - If the string ends with a hyphen, remove it, and append the next string in the list to the current one.')
 #hyphen_string.append(hyphen_string2)
 print('Before removing the hyphen and appending the next string: ' + str(hyphen_string))
+print('This is the second string before appending it: ' + str(hyphen_string2))
 
 for i in hyphen_character:
     hyphen_string = hyphen_string.replace(i, '') #removing the hyphen
     #hyphen_string.append(hyphen_string2)
     hyphen_string3 = hyphen_string + hyphen_string2 # adding two strings together
 print('After removing a hyphen and appending the next string: ' +str(hyphen_string3))
+print('\n')
+
+
+# final report
+print('Final Report')
+print('Total characters in the input. White spaces are included in the total')
+input_counter = 0
+input_counter += len(multiple_of_4_string_letter) #part A
+input_counter += len(multiple_of_5_string_letter) #part A
+input_counter += len(multiple_of_5_string_number) #part B
+input_counter += len(multiple_of_6_string_number) #part B
+input_counter += len(uppercase_characters_1) #part C
+input_counter += len(uppercase_characters_2) #part C
+input_counter += len(uppercase_characters_3) #part C
+input_counter += len(uppercase_characters_4) #part C
+input_counter += len(uppercase_characters_5) #part C
+input_counter += len(uppercase_characters_6) #part C
+input_counter += len(hyphen_string) #part D
+input_counter += len(hyphen_string2) #part D
+print(input_counter)
+
+
+print('Total characters in the output. White spaces are included in the total')
+output_counter = 0
+output_counter += len(multiple_of_4_string_letter) #part A
+output_counter += len(multiple_of_5_string_letter) #part A
+output_counter += 5 #part B
+output_counter += len(multiple_of_6_string_number) #part B
+output_counter += len(uppercase_characters_1) #part C
+output_counter += len(uppercase_characters_2) #part C
+output_counter += len(uppercase_characters_3) #part C
+output_counter += len(uppercase_characters_4) #part C
+output_counter += len(uppercase_characters_5) #part C
+output_counter += len(uppercase_characters_6) #part C
+output_counter += len(hyphen_string3) #part D
+print(output_counter)
+
+
+print('Median length of all of the strings, white spaces are included')
+median_length = 0
+median_length = len(multiple_of_4_string_letter) / 2
+print('Part A: ' + str(median_length))
+median_length = len(multiple_of_5_string_letter) / 2
+print('Part A: ' + str(median_length))
+median_length = len(multiple_of_5_string_number) / 2
+print('Part B: ' + str(median_length))
+median_length = len(multiple_of_6_string_number) / 2
+print('Part B: ' + str(median_length))
+median_length = len(uppercase_characters_1) / 2
+print('Part C all strings median length: ' + str(median_length)) # part C does not change the length of the strings so i just did one print statement for part C strings.
+median_length = len(hyphen_string) / 2
+print('Part D: ' + str(median_length))
+median_length = len(hyphen_string2) / 2
+print('Part D: ' + str(median_length))
+
+
